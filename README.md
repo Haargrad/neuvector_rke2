@@ -1,6 +1,7 @@
 # neuvector_rke2
-
+```bash
 sudo bash -c 'curl -sfL https://get.rke2.io | INSTALL_RKE2_CHANNEL="v1.22" sh -'
+```
 sudo mkdir -p /etc/rancher/rke2
 sudo bash -c 'echo "write-kubeconfig-mode: \"644\" " > /etc/rancher/rke2/config.yaml'
 sudo systemctl enable --now rke2-server.service
